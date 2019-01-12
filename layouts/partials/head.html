@@ -29,7 +29,7 @@
 {{ if .Site.Params.visual.image.enable }}
   <style>
   {{ if .Site.Params.visual.image.file }}
-    .fs-split .split-image { background-image: url("{{ .Params.image | absURL }}"); background-position: {{ if .Params.image-position }}{{ .Params.image-position }}{{ else }}center center{{ end }}; }
+    .fs-split .split-image { background-image: url("{{ .Params.image | absURL }}"); background-position: {{ if .Params.position }}{{ .Params.image-position }}{{ else }}center center{{ end }}; }
   {{ end }}
   </style>
 {{ end }}
